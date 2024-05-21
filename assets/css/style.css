@@ -1,0 +1,323 @@
+:root {
+
+    --bg1: #ffffff;
+    --bg2: rgb(44, 42, 42);
+    --brand: #250047;
+    --whit: rgb(235, 235, 235);
+    --p: rgb(16, 150, 150);
+    --body: rgb(190, 30, 30);
+}   
+
+* {
+    font-family: "Times New Roman", serif;
+}
+
+/* ############################################## NAVBAR ########################################################## */
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 20px #000000, 0 0 40px #000000;
+    transition: all 0.4s ease;
+}
+
+.navbar .navbar-brand:hover {
+    color: peru;
+    filter: drop-shadow(0 0 0.75rem peru);
+    text-shadow: 0 0 20px peru, 0 0 40px peru;
+    transition: all 0.4s ease;
+}
+
+.navbar .navbar-brand {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .navbar-brand img {
+    width: 70px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: crimson;
+}
+
+.nav-link.active {
+    background: linear-gradient(#7b3b00, #b56d01, #df9800, #ffd500);
+    border-radius: 10px;
+  }
+/* ################################################## END NAVBAR ######################################################## */
+
+
+
+/* ################################################## BANNER ######################################################## */
+#banner {
+    min-height: 100vh;
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.616), rgba(44, 42, 42, 0.726)), url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Beer-Desktop-Background.jpg") no-repeat;
+    background-size: cover;
+}
+
+#banner .text {
+    text-shadow: 0 0 8px #ff0000, 0 0 40px #bc0000;
+    color: #ffff;
+}
+/* ################################################## END BANNER ######################################################## */
+
+
+
+/* ################################################## SECTION ####################################################### */
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* ################################################## END SECTION ####################################################### */
+
+
+
+/* ################################################### BUTTON ####################################################### */
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    border-radius: 3;
+    font-weight: 800;
+}
+
+#banner .btn-brand {
+    color: peru;
+    background-color: transparent;
+    border-color: peru;
+}
+
+#about .btn-brand {
+    color: #000;
+    background-color: transparent;
+    border-color: peru;
+}
+
+#cta .btn-brand {
+    color: peru;
+    background-color: transparent;
+    border-color: peru;
+}
+
+#banner .btn-brand:hover {
+    color: #ffffff;
+    background: linear-gradient(#7b3b00, #b56d01, #df9800, #ffd500);
+}
+
+#about .btn-brand:hover {
+    color: #ffffff;
+    background: linear-gradient(#7b3b00, #b56d01, #df9800, #ffd500);
+}
+
+#cta .btn-brand:hover {
+    color: #ffffff;
+    background: linear-gradient(#7b3b00, #b56d01, #df9800, #ffd500);
+}
+
+.btn-outlined-brand {
+    color: peru;
+    background-color: transparent;
+    border-color: peru;
+}
+
+.btn-outlined-brand:hover {
+    background-color: peru;
+}
+/* ################################################### END BUTTON ####################################################### */
+
+
+
+/* #################################################### ROW ########################################################## */
+.row {
+    text-align: justify;
+}
+/* #################################################### END ROW ########################################################## */
+
+/* ########################## ABOUT ############################### */
+#about {
+    background: linear-gradient(#ffffff, #d6d6d6, #c8c8c8, #aeaeae, #686868);
+}
+
+#about img {
+  display: block;
+  margin: 0 auto;
+}
+
+#about .button {
+  text-align: center;
+}
+
+#about .text {
+  color: peru;
+}
+
+#about li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+  font-size: 18px;
+  color: peru;
+}
+
+#about li:before {
+  content: "\25BA \0020";
+  position: absolute;
+  left: -10px;
+}
+
+/* ########################## END ABOUT ############################### */
+
+/* ################################################### SERVICES CARD ##################################################### */
+.icon-img-box {
+    width: 40%;
+}
+
+.card {
+    transition: background-color 0.2s, 0.2s;
+}
+
+.card:hover {
+    background: linear-gradient(#7b3b00, #b56d01, #df9800, #ffd500);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+    color: #fff
+}
+
+#services .card img{
+    filter: drop-shadow(15px 5px 2px #000000);
+    width: 10em;
+}
+/* ################################################### END SERVICES CARD ################################################### */
+
+
+
+/* #################################################### CTA ############################################################## */
+#cta {
+    background: linear-gradient(to right, hsla(0, 2%, 17%, 0.616), rgba(44, 42, 42, 0.726)), url("https://www.itl.cat/pngfile/big/189-1893584_red-horse-wallpaper-red-horse-beer-background.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 70vh;
+}
+
+#cta .card img{
+    filter: drop-shadow(10px 5px 2px #000000);
+}
+/* #################################################### END CTA ############################################################## */
+
+
+
+/* #################################################### REVIEWS ############################################################## */
+#reviews {
+    background-color: var(--white);
+}
+
+.testimonials {
+    background-color: var(--bg2);
+    padding: 30px;
+}
+
+.testimonials img {
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+}
+
+#reviews {
+    color: var(--brand);
+}
+/* #################################################### END REVIEWS ############################################################## */
+
+/* #################################### FOOTER ###################################### */
+#faq {
+    background: linear-gradient(#686868, #aeaeae, #c8c8c8, #d6d6d6, #aeaeae, #686868);
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+}
+
+.faq-question {
+    background-color: #f8f9fa;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-answer {
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+.accordion-button:focus {
+    color: var(--bg1);
+}
+
+.faq-question:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+.accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    float: right;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    content: "";
+}
+
+#footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg1);
+}
+
+#footer ul.list-unstyled li a {
+    color: #fff;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--bg2);
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg2);
+}
+
+.btn-outline-light {
+    border-color: #F2B03B !important;
+    color: #F2B03B;
+}
+
+#footer h5 {
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+/* #################################### END FOOTER ###################################### */
